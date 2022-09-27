@@ -56,22 +56,12 @@ An online CV gives more freedom than a paper CV, be creative and fun ;-)
 * Anthony H
 * Johann
 
-### Group 2
-* Hélène
-* Killian
-* Jordan
+Tasks : 
 
-### Group 3
-* Naomie
-* Antony
-* Alexis
-* Julien
-
-### Group 4
-* Groupe 4
-* Bixente
-* Yazid
-* Pierre
+- Johann : Traduction 
+- Tolo : buttons 
+- Andy : CSS 
+- Anthony : Dark mode / Light mode
 
 
 
