@@ -38,6 +38,26 @@
     max-width: 55%;
     border-radius: 50%;
   }
+
+  .stark {
+    display: none;
+    max-width: initial;
+  }
+
+  .targaryen {
+    display: none;
+    border-radius: initial;
+    max-width: initial;
+  }
+
+  .stark1 {
+    margin: auto;
+  }
+
+  .targaryen1 {
+    margin: auto;
+  }
+
   header #fName {
     margin: 0;
     position: absolute;
@@ -106,9 +126,14 @@
   .info article:hover {
     transform: scale(1.04);
   }
-  .info #suite1 {
+  .text1 {
     margin: 0;
     display: none;
+  }
+
+  .text1.visible {
+    margin: 0;
+    display: block;
   }
   .info #suite2 {
     margin: 0;
@@ -131,4 +156,20 @@
   100% {
     opacity: 1;
   }
-}/*# sourceMappingURL=styleMobile.css.map */
+}
+.logoReseaux {
+
+  display: flex;
+  flex-direction: column;
+  width: 32px;
+}
+
+.twitter {
+  max-width: initial;
+}
+
+.linkedin {
+  border-radius: initial;
+  max-width: initial;
+}
+/*# sourceMappingURL=styleMobile.css.map */

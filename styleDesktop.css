@@ -38,6 +38,30 @@
     max-width: 40%;
     border-radius: 50%;
   }
+
+  .logoGoT {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+  }
+
+  .stark {
+    max-width: initial;
+  }
+
+  .targaryen {
+    border-radius: initial;
+    max-width: initial;
+  }
+
+  .stark1 {
+    display: none;
+  }
+
+  .targaryen1 {
+    display: none;
+  }
+
   header #fName {
     margin: 0;
     position: absolute;
@@ -118,11 +142,16 @@
   .info article:hover {
     transform: scale(1.04);
   }
-  *.info #suite1 {
+
+  .text1 {
     margin: 0;
     display: none;
   }
 
+  .text1.visible {
+    margin: 0;
+    display: block;
+  }
   .info #suite2 {
     margin: 0;
     display: none;
@@ -172,4 +201,40 @@
   }
 
 
-}/*# sourceMappingURL=styleDesktop.css.map */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 0.8rem;
+  font-family: var(--titleFont);
+
+}
+
+#language {
+  background-color: var(--backgroundBox);
+  color: var(--colorFont);
+
+
+}
+
+input[type=submit] {
+  background-color: var(--backgroundBox);
+  color: var(--colorFont);
+  border: 1px solid var(--colorFont);
+
+}
+.logoReseaux {
+
+  display: flex;
+  flex-direction: column;
+  width: 32px;
+}
+
+.twitter {
+  max-width: initial;
+}
+
+.linkedin {
+  border-radius: initial;
+  max-width: initial;
+}

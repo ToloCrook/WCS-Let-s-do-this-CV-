@@ -9,7 +9,7 @@
     --colorFont: #E6E0E6;
 }
 
-.dark-mode {
+.light-mode {
 
     --backgroundBody: #BFF7FF;
     --backgroundBox: #3088AE;
@@ -40,13 +40,15 @@
     background-color: grey;
 }
 
+.button {
+    cursor: pointer;
+}
+
 .lang {
     font-size: 0.7rem;
 }
 
 #lang-selection {
-    
-    display: none;
     align-self: end;
     font-size: 0.7rem;
 }
