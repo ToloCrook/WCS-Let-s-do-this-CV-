@@ -1,7 +1,7 @@
-function voirsuite1() {
+/*function voirsuite1() {
     document.getElementById('voirsuite1').style.display = 'none';
     document.getElementById('suite1').style.display = 'block';
-}
+}*/
 function voirsuite2() {
     document.getElementById('voirsuite2').style.display = 'none';
     document.getElementById('suite2').style.display = 'block'; z
@@ -56,7 +56,7 @@ function replierLanguage() {
 
  }
 
- }
+
  
 
 
@@ -70,10 +70,21 @@ function replierLanguage() {
             body.classList.toggle('dark-mode');
         })
 
-
-
-
-
-
-
-
+// ------------------ ANDY JS --------------------------------------------------------------------------------------------
+var z=999;
+$(function() {
+	$('.info .expBlock').click(function(){
+	   var $more=$(this).find('.info #suite1')
+       $more.css('z-index',z).show();
+       z++;
+       
+       var h=$more.height();     
+       $(this).height(h);
+	})
+    
+    $('.info #suite1').click(function(event){
+        event.stopPropagation();
+        $(this).hide();        
+        $('.info .expBlock').height(100);        
+    })
+})

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;500&family=Patua+One&display=swap");
 /*Game of thrones font*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Patua+One&display=swap");
-
 /*Monserrat font*/
 :root {
   --backgroundBody: #e5fdff;
@@ -19,14 +18,12 @@
     background-color: var(--backgroundBody);
     color: var(--colorFont);
   }
-
   main {
     margin: 1vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
   header {
     margin: 0;
     margin-top: 2%;
@@ -37,49 +34,28 @@
     align-items: center;
     position: relative;
   }
-
   header img {
     max-width: 40%;
     border-radius: 50%;
   }
-
-  .logoReseaux {
-    display: flex;
-    width: 100vw;
-    justify-content: space-around;
-  }
-
-  .twitter {
-    max-width: initial;
-  }
-
-  .linkedin {
-    border-radius: initial;
-    max-width: initial;
-  }
-
   header #fName {
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 14%;
     font-size: 8vw;
     font-family: var(--titleFont);
-    -webkit-animation: fadeIn 5s;
-    animation: fadeIn 5s;
+            animation: fadeFName 3s;
   }
-
   header #lName {
     margin: 0;
     position: absolute;
     top: 50%;
-    right: 2%;
+    right: 5%;
     font-size: 8vw;
     font-family: var(--titleFont);
-    -webkit-animation: fadeIn 5s;
-    animation: fadeIn 5s;
+            animation: fadeLName 3s;
   }
-
   #about {
     display: flex;
     flex-direction: column;
@@ -87,7 +63,6 @@
     align-items: center;
     margin-bottom: 5%;
   }
-
   #about h2 {
     align-items: center;
     margin: 0;
@@ -95,14 +70,12 @@
     font-size: 3vw;
     font-family: var(--titleFont);
   }
-
   #about p {
     margin: 0;
     font-size: 1.5vw;
     font-family: var(--mainFont);
     text-align: center;
   }
-
   .info {
     margin: 0;
     display: grid;
@@ -110,11 +83,18 @@
     grid-template-rows: auto;
     justify-content: center;
   }
-
   .info a {
     text-decoration: none;
     color: var(--colorFont);
   }
+
+.wrapperExp{
+  display: flex;
+  justify-content: center;
+}
+
+
+
 
   .info article {
     border: solid 0px var(--border);
@@ -126,22 +106,19 @@
     min-width: 45vw;
     transition: transform 0.5s;
   }
-
   .info article h2 {
     font-family: var(--titleFont);
     font-size: 2vw;
+    padding-left: 3vw;
   }
-
   .info article p {
     font-family: var(--mainFont);
     font-size: 1vw;
   }
-
   .info article:hover {
     transform: scale(1.04);
   }
-
-  .info #suite1 {
+  *.info #suite1 {
     margin: 0;
     display: none;
   }
@@ -150,26 +127,49 @@
     margin: 0;
     display: none;
   }
-
   .info #suite3 {
     margin: 0;
     display: none;
   }
-
   .info #suite4 {
     margin: 0;
     display: none;
   }
 
-  @-webkit-keyframes fadeIn {
+  @keyframes fadeFName {
     0% {
       opacity: 0;
     }
-
+    50% {
+      opacity: 0.1;
+    }
     100% {
       opacity: 1;
     }
+    0%{
+      left: 50%;
+    }
+    100%{
+      left: 14%;
+    }
+  }
+  @keyframes fadeLName {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
+    0%{
+      right: 50%;
+    }
+    100%{
+      right: 5%;
+    }
   }
 
-}
 
+}/*# sourceMappingURL=styleDesktop.css.map */

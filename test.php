@@ -25,15 +25,10 @@ require 'elements/data.php';
 
         </script>
 
-
         <div class="buttons">
         <div class="button">
 
-            
-
             <i id="button-on" class="fa-solid fa-toggle-on" onclick="darkmode()"></i>
-
-
             <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()"></i>
 
 </div>
@@ -43,7 +38,6 @@ require 'elements/data.php';
 
                 <span><a href="#" class="lang" onclick="languageOn()" >Select language</a></span>
                
-                
             </div>
         </div>
 
@@ -64,9 +58,6 @@ require 'elements/data.php';
                 <div class="logoReseaux">
                 <a href="https://twitter.com/LordSnow" target="_blank"><img src="/img/twitter-logo.png" class ="twitter" alt="logo lien twitter"></a>
                 <a href="https://uk.linkedin.com/in/jon-snow-3b1245192/fr?trk=people-guest_people_search-card" target="_blank"><img src="/img/linkedin-logo.png" class="linkedin" alt="logo lien linkedin"></a>
-                
-                
-                
                 </div>
         </header>
 
@@ -76,24 +67,27 @@ require 'elements/data.php';
         </div>
 
         <section class="info">
-        
-        <article class="collapsibleExp">
-            <!--<a href="#" onclick="voirsuite1();" id="voirsuite1">-->
 
-                <label for="collapisbleHead"><?= $data[0][0] ?></label>
-            </a>
-            <div id="suite1">
+
+      
+        <div class ="wrapperExp">
+        <article class="collapsibleExp">
+            <input type="checkbox" id="collapisbleExpHead">
+            <label for="collapisbleExpHead"><?= $data[0][0] ?></label>
+            <div id="collapsibleTextExp">
                 <h2><?= $data[0][0] ?></h2>
                 <?php foreach ($data[1] as $value) {
                     echo $value . "<br>";
                 }
                 ?>
                 <br>
-                <!--<a href="#" onclick="replier1();" id="replier1">X</a>-->
-
-
             </div>
         </article>
+        </div>
+
+
+
+
         <article>
             <a href="#" onclick="voirsuite2();" id="voirsuite2">
 
