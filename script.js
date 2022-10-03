@@ -33,7 +33,7 @@ for (i = 0; i < block.length; i++) {
             body.classList.toggle('light-mode');
             localStorage.setItem("theme", body.className);
         });
-
+    }
 
 
 /*-------------------------------------Andy--------------------------------------------------------------*/
