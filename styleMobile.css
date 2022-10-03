@@ -1,42 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;500&family=Patua+One&display=swap");
-/*Game of thrones font*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Patua+One&display=swap");
-/*Monserrat font*/
-:root {
-  --backgroundBody: #BFF7FF;
-  --backgroundBox: #3088AE;
-  --shadow: #002C3A;
-  --border: #002C3A;
-  --colorFont: #002C3A;
-  --titleFont: Cinzel, serif;
-  --mainFont: Montserrat, serif;
-}
-
 @media screen {
   body {
     line-height: 1.5em;
     background-color: var(--backgroundBody);
     color: var(--colorFont);
   }
+
   main {
     margin: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
+  /* Header */
   header {
     margin: 0;
-    margin-top: 2%;
-    padding-bottom: 15%;
+    padding-bottom: 7%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     position: relative;
   }
+
   header img {
     max-width: 55%;
     border-radius: 50%;
+  }
+
+  .logoGoT {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -5%;
   }
 
   .stark {
@@ -50,34 +46,23 @@
     max-width: initial;
   }
 
-  .stark1 {
-    margin: auto;
-  }
-
-  .targaryen1 {
-    margin: auto;
-  }
-
   header #fName {
-    margin: 0;
-    position: absolute;
-    top: 85%;
-    left: 28%;
-    font-size: 8vw;
-    font-family: var(--titleFont);
-    -webkit-animation: fadeIn 5s;
-            animation: fadeIn 5s;
+    display: none;
   }
+
   header #lName {
+    display: none;
+  }
+
+  header #name {
     margin: 0;
     position: absolute;
-    top: 85%;
-    right: 25%;
+    top: 98%;
     font-size: 8vw;
     font-family: var(--titleFont);
-    -webkit-animation: fadeIn 5s;
-            animation: fadeIn 5s;
+    animation: fadeIn 5s;
   }
+
   #about {
     display: flex;
     flex-direction: column;
@@ -85,91 +70,177 @@
     align-items: center;
     margin-bottom: 5%;
   }
+
   #about h2 {
-    align-items: center;
-    margin: 0;
     margin-bottom: 2vw;
     font-size: 5.5vw;
     font-family: var(--titleFont);
+    margin-top: 5%;
   }
+
   #about p {
     margin: 0;
     font-size: 3.5vw;
     font-family: var(--mainFont);
+    text-align: center;
   }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Social media*/
+  .logoReseaux {
+
+    display: flex;
+    flex-direction: column;
+    width: 32px;
+  }
+
+  .twitter {
+    max-width: initial;
+  }
+
+  .linkedin {
+    border-radius: initial;
+    max-width: initial;
+  }
+
+  /*# sourceMappingURL=styleMobile.css.map */
+
+
+  /* animation article */
   .info {
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .info a {
-    text-decoration: none;
-    color: var(--colorFont);
-  }
-  .info article {
-    border: solid 0px var(--border);
+
+  .info .block {
+    border: solid 0.5px var(--border);
     border-radius: 5px;
     background-color: var(--backgroundBox);
     margin: 2vw;
-    padding: 0 5px;
+    padding: 0 10px;
     transition: transform 0.5s;
+    top: 0;
+
   }
-  .info article h2 {
+
+  .info .title-article {
+    position: relative;
+    cursor: pointer;
     font-size: 4vw;
     font-family: var(--titleFont);
   }
-  .info article p {
-    font-size: 2.5vw;
+
+  .info .title-article::before {
+    content: '+';
+    color: var(--colorFont);
+    position: absolute;
+    top: 50%;
+    right: 5vw;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+
+  .info .block:hover {
+    transform: scale(1.05);
+  }
+
+
+  .info .text {
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    font-size: 3vw;
     font-family: var(--mainFont);
   }
-  .info article:hover {
-    transform: scale(1.04);
-  }
-  .text1 {
-    margin: 0;
-    display: none;
+
+  /* Modifier height en fonction de la taille du contenu ! */
+  .info .block.active .text {
+    height: 150px;
   }
 
-  .text1.visible {
-    margin: 0;
-    display: block;
-  }
-  .info #suite2 {
-    margin: 0;
-    display: none;
-  }
-  .info #suite3 {
-    margin: 0;
-    display: none;
-  }
-  .info #suite4 {
-    margin: 0;
-    display: none;
+  .info .block.active .title-article::before {
+    content: '-';
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+
+
+/* BUTTONS */
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  
+  font-size: 0.8rem;
+  font-family: var(--titleFont);
+
 }
+
+.font-language {
+  display: none;
+ 
+}
+
+#language {
+  width: 100%;
+  height: 15px;
+  font-size: 2vw;
+  background-color: var(--backgroundBox);
+  color: var(--colorFont);
+  margin-top: 0;
+
+
+}
+
+
+
+form {
+  display: flex ;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0;
+
+}
+
+input[type=submit] { 
+  width : 100%;
+  height : 15px;
+  font-size: 2vw;
+  text-align: center;
+  background-color: var(--backgroundBox);
+  color: var(--colorFont);
+  border : 1px solid var(--colorFont);
+
+}
+
+
 .logoReseaux {
-
+  
   display: flex;
   flex-direction: column;
-  width: 32px;
+  width: 25px;
 }
 
 .twitter {
-  max-width: initial;
+  width: 25px;
+  height: auto;
 }
 
 .linkedin {
-  border-radius: initial;
-  max-width: initial;
+  width: 25px;
+  height: auto;
 }
-/*# sourceMappingURL=styleMobile.css.map */
+
+
+
