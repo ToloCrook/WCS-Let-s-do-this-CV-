@@ -22,6 +22,7 @@ require_once 'elements/data.php';
     <main>
 
         <!---------------------------Light & Dark mode section------------------------------------------------------------------->
+
         <script src="https://kit.fontawesome.com/67a2af0157.js" crossorigin="anonymous"></script>
 
         <div class="buttons">
@@ -72,79 +73,56 @@ require_once 'elements/data.php';
                 <img src="/img/stark1.png" class="stark1" alt="logo stark">
                 <img src="/img/targaryen1.png" class="targaryen1" alt="logo targaryen">
             </div>
-
-            <div>
                 <h2>King of the North</h2>
                 <p><?= $data[4][0] ?></p>
-            </div>
         </div>
-        <!---------------------------Info section--------------------------------------------------------------------------->
-        <section class="info">
-            <!---------------------------Experience section--------------------------------------------------------------------------->
-            <div class="collapsible block">
+<!---------------------------Info section--------------------------------------------------------------------------->
+            <section class="info">
+<!---------------------------experience section------------------------------------------------------------------->
                 <input type="checkbox" id="collapsible_head" />
-                <label id="labelExp" for="collapsible_head" onclick="changeZindexExp()"><?= $data[0][0] ?></label>
-                <div class="title-article">
-                    <h2><?= $data[0][0] ?></h2>
+                <div class="collapsible block">
+                    <label id="labelExp" class="title-article" for="collapsible_head"><?= $data[0][0] ?></label>
+                    <div id="collapsible_text" class="text">
+                        <P><?php foreach ($data[1] as $value) {
+                                echo $value . "<br>";
+                            }
+                            ?>
+                        </p>
+                    </div>
                 </div>
-                <div id="collapsible_text" class="text">
-                    <p><?php foreach ($data[1] as $value) {
-                            echo $value . "<br>";
-                        }
-                        ?>
-                    </p>
+<!---------------------------education section------------------------------------------------------------------->
+<input type="checkbox" id="collapsible_headEdu" />
+                <div class="collapsibleEdu blockEdu">
+                    <label id="labelExp" class="title-article" for="collapsible_headEdu"><?= $data[0][2] ?></label>
+                    <div id="collapsible_textEdu" class="text">
+                        <P><?php foreach ($data[3] as $value) {
+                                echo $value . "<br>";
+                            }
+                            ?>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <!---------------------------education section------------------------------------------------------------------->
-            <div class="collapsibleEdu block">
-                <input type="checkbox" id="collapsible_headEdu" />
-                <label id="labelEdu" for="collapsible_headEdu" onclick="changeZindexEdu()"><?= $data[0][2] ?></label>
-                <div class="title-article">
-                    <h2><?= $data[0][2] ?></h2>
+<!---------------------------Skills section------------------------------------------------------------------------->
+<input type="checkbox" id="collapsible_headSkl" />
+                <div class="collapsibleSkl block">
+                    <label id="labelSkl" class="title-article" for="collapsible_headSkl"><?= $data[0][1] ?></label>
+                    <div id="collapsible_textSkl" class="text">
+                        <P><?php foreach ($data[2] as $value) {
+                                echo $value . "<br>";
+                            }
+                            ?>
+                        </p>
+                    </div>
                 </div>
-                <div id="collapsible_textEdu" class="text">
-                    <p><?php foreach ($data[3] as $value) {
-                            echo $value . "<br>";
-                        }
-                        ?>
-                    </p>
+<!---------------------------contact section------------------------------------------------------------------------>
+                <div class="contact block">
+                    <label id="labelCon" class="title-article">CONTACT</label>
+                    <div class="contacDetails text">
+                        <p>Mobile : 01.23.45.67.89</p>
+                        <a href="mailto:jon.snow@gameofthrones">@ jon.snow@gameofthrones</a><br />
+                    </div>
                 </div>
-            </div>
-
-            <!---------------------------Skills section------------------------------------------------------------------------->
-            <div class="collapsibleSkl block">
-                <input type="checkbox" id="collapsible_headSkl" />
-                <label id="labelSkl" for="collapsible_headSkl" onclick="changeZindexSkl()"><?= $data[0][1] ?></label>
-                <div class="title-article">
-                    <h2><?= $data[0][1] ?></h2>
-                </div>
-                <div id="collapsible_textSkl" class="text">
-                    <p><?php foreach ($data[2] as $value) {
-
-                            echo $value . "<br>";
-                        }
-                        ?>
-                    </p>
-                </div>
-            </div>
-
-            <!---------------------------contact section------------------------------------------------------------------------>
-            <div class="contact block">
-                <label id="labelCon">CONTACT</label>
-                <div class="title-article">
-                    <h2>Contact</h2>
-                </div>
-                <div class="contactDetails text">
-                    <p><?php foreach ($data[5] as $value) {
-
-                            echo $value . "<br>";
-                        }
-                        ?>
-                    </p>
-                </div>
-            </div>
-            <!---------------------------end of info section-------------------------------------------------------------------->
-        </section>
+            </section>
     </main>
 
     <script src="/script.js"></script>
