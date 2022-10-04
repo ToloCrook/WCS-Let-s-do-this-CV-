@@ -63,6 +63,10 @@
     animation: fadeIn 5s;
   }
 
+  input {
+    display: none;
+  }
+
   #about {
     display: flex;
     flex-direction: column;
@@ -97,7 +101,6 @@
 
   /* Social media*/
   .logoReseaux {
-
     display: flex;
     flex-direction: column;
     width: 32px;
@@ -113,7 +116,6 @@
   }
 
   /*# sourceMappingURL=styleMobile.css.map */
-
 
   /* animation article */
   .info {
@@ -131,7 +133,6 @@
     padding: 0 10px;
     transition: transform 0.5s;
     top: 0;
-
   }
 
   .info .title-article {
@@ -142,7 +143,7 @@
   }
 
   .info .title-article::before {
-    content: '+';
+    content: "+";
     color: var(--colorFont);
     position: absolute;
     top: 50%;
@@ -154,7 +155,6 @@
   .info .block:hover {
     transform: scale(1.05);
   }
-
 
   .info .text {
     height: 0px;
@@ -170,26 +170,22 @@
   }
 
   .info .block.active .title-article::before {
-    content: '-';
+    content: "-";
   }
 }
-
-
 
 /* BUTTONS */
 
 .buttons {
   display: flex;
   justify-content: space-between;
-  
+
   font-size: 0.8rem;
   font-family: var(--titleFont);
-
 }
 
 .font-language {
   display: none;
- 
 }
 
 #language {
@@ -199,34 +195,26 @@
   background-color: var(--backgroundBox);
   color: var(--colorFont);
   margin-top: 0;
-
-
 }
 
-
-
 form {
-  display: flex ;
+  display: flex;
   flex-direction: column;
   align-items: flex-end;
   padding: 0;
-
 }
 
-input[type=submit] { 
-  width : 100%;
-  height : 15px;
+input[type="submit"] {
+  width: 100%;
+  height: 15px;
   font-size: 2vw;
   text-align: center;
   background-color: var(--backgroundBox);
   color: var(--colorFont);
-  border : 1px solid var(--colorFont);
-
+  border: 1px solid var(--colorFont);
 }
 
-
 .logoReseaux {
-  
   display: flex;
   flex-direction: column;
   width: 25px;
@@ -241,6 +229,3 @@ input[type=submit] {
   width: 25px;
   height: auto;
 }
-
-
-
