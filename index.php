@@ -73,56 +73,71 @@ require_once 'elements/data.php';
                 <img src="/img/stark1.png" class="stark1" alt="logo stark">
                 <img src="/img/targaryen1.png" class="targaryen1" alt="logo targaryen">
             </div>
-                <h2>King of the North</h2>
-                <p><?= $data[4][0] ?></p>
+            <h2>King of the North</h2>
+            <p><?= $data[4][0] ?></p>
         </div>
-<!---------------------------Info section--------------------------------------------------------------------------->
-            <section class="info">
-<!---------------------------experience section------------------------------------------------------------------->
-                <input type="checkbox" id="collapsible_head" />
-                <div class="collapsible block">
-                    <label id="labelExp" class="title-article" for="collapsible_head"><?= $data[0][0] ?></label>
-                    <div id="collapsible_text" class="text">
-                        <P><?php foreach ($data[1] as $value) {
-                                echo $value . "<br>";
-                            }
-                            ?>
-                        </p>
-                    </div>
+        <!---------------------------Info section--------------------------------------------------------------------------->
+        <section class="info">
+            <!---------------------------experience section------------------------------------------------------------------->
+            <input type="checkbox" id="collapsible_head" />
+            <div class="collapsible block">
+                <label id="labelExp" class="title-article" for="collapsible_head"><?= $data[0][0] ?></label>
+                <div class="title-article">
+                    <h2><?= $data[0][0] ?></h2>
                 </div>
-<!---------------------------education section------------------------------------------------------------------->
-<input type="checkbox" id="collapsible_headEdu" />
-                <div class="collapsibleEdu blockEdu">
-                    <label id="labelExp" class="title-article" for="collapsible_headEdu"><?= $data[0][2] ?></label>
-                    <div id="collapsible_textEdu" class="text">
-                        <P><?php foreach ($data[3] as $value) {
-                                echo $value . "<br>";
-                            }
-                            ?>
-                        </p>
-                    </div>
+                <div id="collapsible_text" class="text">
+                    <P><?php foreach ($data[1] as $value) {
+                            echo $value . "<br>";
+                        }
+                        ?>
+                    </p>
                 </div>
-<!---------------------------Skills section------------------------------------------------------------------------->
-<input type="checkbox" id="collapsible_headSkl" />
-                <div class="collapsibleSkl block">
-                    <label id="labelSkl" class="title-article" for="collapsible_headSkl"><?= $data[0][1] ?></label>
-                    <div id="collapsible_textSkl" class="text">
-                        <P><?php foreach ($data[2] as $value) {
-                                echo $value . "<br>";
-                            }
-                            ?>
-                        </p>
-                    </div>
+            </div>
+            <!---------------------------education section------------------------------------------------------------------->
+            <input type="checkbox" id="collapsible_headEdu" />
+            <div class="collapsibleEdu block">
+                <label id="labelExp" class="title-article" for="collapsible_headEdu"><?= $data[0][2] ?></label>
+                <div class="title-article">
+                    <h2><?= $data[0][2] ?></h2>
                 </div>
-<!---------------------------contact section------------------------------------------------------------------------>
-                <div class="contact block">
-                    <label id="labelCon" class="title-article">CONTACT</label>
-                    <div class="contacDetails text">
-                        <p>Mobile : 01.23.45.67.89</p>
-                        <a href="mailto:jon.snow@gameofthrones">@ jon.snow@gameofthrones</a><br />
-                    </div>
+                <div id="collapsible_textEdu" class="text">
+                    <P><?php foreach ($data[3] as $value) {
+                            echo $value . "<br>";
+                        }
+                        ?>
+                    </p>
                 </div>
-            </section>
+            </div>
+            <!---------------------------Skills section------------------------------------------------------------------------->
+            <input type="checkbox" id="collapsible_headSkl" />
+            <div class="collapsibleSkl block">
+                <label id="labelSkl" class="title-article" for="collapsible_headSkl"><?= $data[0][1] ?></label>
+                <div class="title-article">
+                    <h2><?= $data[0][1] ?></h2>
+                </div>
+                <div id="collapsible_textSkl" class="text">
+                    <P><?php foreach ($data[2] as $value) {
+                            echo $value . "<br>";
+                        }
+                        ?>
+                    </p>
+                </div>
+            </div>
+            <!---------------------------contact section------------------------------------------------------------------------>
+            <div class="contact block">
+                <label id="labelCon" class="title-article">CONTACT</label>
+                <div class="title-article">
+                    <h2><?= $data[0][3] ?></h2>
+                </div>
+                <div class="contacDetails text">
+                    <P><?php foreach ($data[5] as $value) {
+                            echo $value . "<br>";
+                        }
+                        ?>
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="/script.js"></script>
