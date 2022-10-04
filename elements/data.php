@@ -1,7 +1,7 @@
 <?php
 
 $dataFrench = [
-    ["Expériences", "Compétences", "Formations"],
+    ["Expériences", "Compétences", "Formations", "Contact"],
     ["Gardien de mur", "Combattant de marcheurs blancs", "Soldat"],
     ["Epéiste", "Dirigeant", "Engagé"],
     ["Héritier", "Maniement des armes", "Politique"],
@@ -11,7 +11,7 @@ $dataFrench = [
 ];
 
 $dataEnglish = [
-    ["Experiences", "Skills", "Training"],
+    ["Experiences", "Skills", "Training", "Contact"],
     ["Wall Guardian", "White Walker Fighter", "Soldier"],
     ["Swordsman", "Leader", "Engaged"],
     ["Heir", "Weapon handling", "Policy"],

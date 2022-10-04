@@ -26,7 +26,8 @@
     flex-direction: column;
     justify-content: center;
   }
-/*-----------------------------------header section-------------------------------------------------------------------------*/
+
+  /*-----------------------------------header section-------------------------------------------------------------------------*/
   header {
     margin: 0;
     margin-top: 0%;
@@ -62,7 +63,8 @@
     font-family: var(--titleFont);
     animation: fadeIn 5s;
   }
-/*-----------------------------------House logos section-------------------------------------------------------------------------*/
+
+  /*-----------------------------------House logos section-------------------------------------------------------------------------*/
   .logoGoT {
     position: absolute;
     display: flex;
@@ -94,14 +96,15 @@
   header #name {
     display: none;
   }
-/*-----------------------------------about section-------------------------------------------------------------------------*/
+
+  /*-----------------------------------about section-------------------------------------------------------------------------*/
 
   #about {
     margin: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     margin-bottom: 5%;
   }
 
@@ -121,260 +124,266 @@
   }
 
 
-/*-----------------------------------info section-------------------------------------------------------------------------------*/
-.info {
-  margin: 4.5vw;
-  left: 0%;
-  position: relative;
-  overflow: hidden;
-  width: 87vw;
-  height: 65vh;
-}
-
-input {
-display: none;
-}
-
-/*-----------------------------------experience section-------------------------------------------------------------------------*/
-.collapsible{
-  position: absolute;
-  width: 40vw;
-  height: 26vh;
-  padding-top: 2%;
-  padding-left: 2%;
-  border-radius: 10px;
-  background: var(--backgroundBox);
-  color: var(--colorFont);
-  transition: 0.5s ease-out;
-  z-index: 1;
-}
-
-.info #collapsible_head:checked ~ .collapsible{
-  height: 61.3vh;
-  width: 85.3vw;
-  overflow:auto;
-}
-
-.info #collapsible_head:checked ~ .collapsibleEdu{
-  z-index: -1;
-}
-.info #collapsible_head:checked ~ .collapsibleSkl{
-z-index: -1;
-}
-
-
-.collapsible label{
-  font-size: 2vw;
-  font-family: var(--titleFont);
-  cursor: pointer;
-  transition: 0.5s ease-out;
-}
-
-#collapsible_text {
-  position: absolute;
-  margin: 0;
-  align-items: left;
-  overflow:hidden;
-}
-
-#collapsible_text p {
-  margin: 0;
-  font-size: 1vw;
-  font-family: var(--mainFont);
-  color: var(--colorFont);
-  overflow: auto;
-}
-
-/*-----------------------------------education section-------------------------------------------------------------------------*/
-.collapsibleEdu{
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  width: 40vw;
-  height: 26vh;
-  padding-top: 2%;
-  padding-left: 2%;
-  border-radius: 10px;
-  background: var(--backgroundBox);
-  color: var(--colorFont);
-  transition: 0.5s ease-out;
-  z-index: 1;
-}
-
-.info #collapsible_headEdu:checked ~ .collapsibleEdu{
-  height: 61.3vh;
-  width: 85.3vw;
-  overflow:auto;
-}
-
-.info #collapsible_headEdu:checked ~ .collapsible{
-  z-index: -1;
-}
-.info #collapsible_headEdu:checked ~ .collapsibleSkl{
-  z-index: -1;
+  /*-----------------------------------info section-------------------------------------------------------------------------------*/
+  .info {
+    margin: 4.5vw;
+    left: 0%;
+    position: relative;
+    overflow: hidden;
+    width: 87vw;
+    height: 65vh;
   }
 
-.collapsibleEdu label{
-  font-size: 2vw;
-  font-family: var(--titleFont);
-  cursor: pointer;
-  transition: 0.5s ease-out;
-}
-
-#collapsible_textEdu {
-  position: absolute;
-  margin: 0;
-  align-items: left;
-  overflow:hidden;
-}
-
-#collapsible_textEdu p {
-  margin: 0;
-  font-size: 1vw;
-  font-family: var(--mainFont);
-  color: var(--colorFont);
-  overflow: auto;
-}/*-----------------------------------Skills section-------------------------------------------------------------------------*/
-.collapsibleSkl{
-  position: absolute;
-  width: 40vw;
-  height: 26vh;
-  bottom: 0%;
-  left: 0%;
-  padding-top: 2%;
-  padding-left: 2%;
-  border-radius: 10px;
-  background: var(--backgroundBox);
-  color: var(--colorFont);
-  transition: 0.5s ease-out;
-  z-index: 1;
-}
-
-.info #collapsible_headSkl:checked ~ .collapsibleSkl{
-  height: 61.3vh;
-  width: 85.3vw;
-  overflow:auto;
-}
-
-.info #collapsible_headSkl:checked ~ .collapsible{
-  z-index: -1;
-}
-.info #collapsible_headSkl:checked ~ .collapsibleEdu{
-  z-index: -1;
-}
-
-.collapsibleSkl #labelSkl{
-  font-size: 2vw;
-  font-family: var(--titleFont);
-  cursor: pointer;
-  transition: 0.5s ease-out;
-}
-
-#collapsible_textSkl {
-  position: absolute;
-  margin: 0;
-  align-items: left;
-  overflow:hidden;
-}
-
-#collapsible_textSkl p {
-  margin: 0;
-  font-size: 1vw;
-  font-family: var(--mainFont);
-  color: var(--colorFont);
-  overflow: auto;
-}
-/*-----------------------------------Contact section-------------------------------------------------------------------------*/
-
-.contact {
-  position: absolute;
-  margin: 0;
-  display: grid;
-  grid-template-columns: auto;
-  margin: 0;
-  bottom: 0%;
-  right: 0%;
-  width: 42vw;
-  height: 29.5vh;
-  overflow:hidden;
-  border-radius: 10px;
-  background: var(--backgroundBox);
-  transition: 0.3s ease-out;
-  z-index: 0;
-}
-
-.contact #labelCon{
-  font-size: 2vw;
-  font-family: var(--titleFont);
-  color: var(--colorFont);
-  padding-left: 2vw;
-  padding-top: 3vh;
-}
-
-.contact .contactDetails {
-  margin: 0;
-  padding-top: 0%;
-  padding-left: 5%;
-  font-size: 1vw;
-  align-items: left;
-  font-family: var(--mainFont);
-  color: var(--colorFont);
-}
-.contactDetails a{
-  margin: 0;
-  padding-top: 0%;
-  padding-left: 5%;
-  font-size: 2vw;
-  align-items: left;
-  font-family: var(--mainFont);
-  color: var(--colorFont);
-}
-
-.title-article {
-  display : none;
+  input {
+    display: none;
   }
-  
-/*-----------------------------------Fname & Lname animation-------------------------------------------------------------------------*/
+
+  /*-----------------------------------experience section-------------------------------------------------------------------------*/
+  .collapsible {
+    position: absolute;
+    width: 40vw;
+    height: 26vh;
+    padding-top: 2%;
+    padding-left: 2%;
+    border-radius: 10px;
+    background: var(--backgroundBox);
+    color: var(--colorFont);
+    transition: 0.5s ease-out;
+    z-index: 1;
+  }
+
+  .info #collapsible_head:checked~.collapsible {
+    height: 61.3vh;
+    width: 85.3vw;
+    overflow: auto;
+  }
+
+  .info #collapsible_head:checked~.collapsibleEdu {
+    z-index: -1;
+  }
+
+  .info #collapsible_head:checked~.collapsibleSkl {
+    z-index: -1;
+  }
+
+
+  .collapsible label {
+    font-size: 2vw;
+    font-family: var(--titleFont);
+    cursor: pointer;
+    transition: 0.5s ease-out;
+  }
+
+  #collapsible_text {
+    position: absolute;
+    margin: 0;
+    align-items: left;
+    overflow: hidden;
+  }
+
+  #collapsible_text p {
+    margin: 0;
+    font-size: 1vw;
+    font-family: var(--mainFont);
+    color: var(--colorFont);
+    overflow: auto;
+  }
+
+  /*-----------------------------------education section-------------------------------------------------------------------------*/
+  .collapsibleEdu {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 40vw;
+    height: 26vh;
+    padding-top: 2%;
+    padding-left: 2%;
+    border-radius: 10px;
+    background: var(--backgroundBox);
+    color: var(--colorFont);
+    transition: 0.5s ease-out;
+    z-index: 1;
+  }
+
+  .info #collapsible_headEdu:checked~.collapsibleEdu {
+    height: 61.3vh;
+    width: 85.3vw;
+    overflow: auto;
+  }
+
+  .info #collapsible_headEdu:checked~.collapsible {
+    z-index: -1;
+  }
+
+  .info #collapsible_headEdu:checked~.collapsibleSkl {
+    z-index: -1;
+  }
+
+  .collapsibleEdu label {
+    font-size: 2vw;
+    font-family: var(--titleFont);
+    cursor: pointer;
+    transition: 0.5s ease-out;
+  }
+
+  #collapsible_textEdu {
+    position: absolute;
+    margin: 0;
+    align-items: left;
+    overflow: hidden;
+  }
+
+  #collapsible_textEdu p {
+    margin: 0;
+    font-size: 1vw;
+    font-family: var(--mainFont);
+    color: var(--colorFont);
+    overflow: auto;
+  }
+
+  /*-----------------------------------Skills section-------------------------------------------------------------------------*/
+  .collapsibleSkl {
+    position: absolute;
+    width: 40vw;
+    height: 26vh;
+    bottom: 0%;
+    left: 0%;
+    padding-top: 2%;
+    padding-left: 2%;
+    border-radius: 10px;
+    background: var(--backgroundBox);
+    color: var(--colorFont);
+    transition: 0.5s ease-out;
+    z-index: 1;
+  }
+
+  .info #collapsible_headSkl:checked~.collapsibleSkl {
+    height: 61.3vh;
+    width: 85.3vw;
+    overflow: auto;
+  }
+
+  .info #collapsible_headSkl:checked~.collapsible {
+    z-index: -1;
+  }
+
+  .info #collapsible_headSkl:checked~.collapsibleEdu {
+    z-index: -1;
+  }
+
+  .collapsibleSkl #labelSkl {
+    font-size: 2vw;
+    font-family: var(--titleFont);
+    cursor: pointer;
+    transition: 0.5s ease-out;
+  }
+
+  #collapsible_textSkl {
+    position: absolute;
+    margin: 0;
+    align-items: left;
+    overflow: hidden;
+  }
+
+  #collapsible_textSkl p {
+    margin: 0;
+    font-size: 1vw;
+    font-family: var(--mainFont);
+    color: var(--colorFont);
+    overflow: auto;
+  }
+
+  /*-----------------------------------Contact section-------------------------------------------------------------------------*/
+
+  .contact {
+    position: absolute;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    bottom: 0%;
+    right: 0%;
+    width: 42vw;
+    height: 29.5vh;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--backgroundBox);
+    transition: 0.3s ease-out;
+    z-index: 0;
+  }
+
+  .contact #labelCon {
+    font-size: 2vw;
+    font-family: var(--titleFont);
+    color: var(--colorFont);
+    padding-left: 2vw;
+    padding-top: 3vh;
+  }
+
+  .contact .contactDetails {
+    margin: 0;
+    padding-top: 0%;
+    padding-left: 5%;
+    font-size: 1vw;
+    align-items: left;
+    font-family: var(--mainFont);
+    color: var(--colorFont);
+  }
+
+  .contactDetails a {
+    margin: 0;
+    padding-top: 0%;
+    padding-left: 5%;
+    font-size: 2vw;
+    align-items: left;
+    font-family: var(--mainFont);
+    color: var(--colorFont);
+  }
+
+  /*-----------------------------------Fname & Lname animation-------------------------------------------------------------------------*/
   @keyframes fadeIn {
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
   }
-/*-----------------------------------Dark/Light Mode & Language section--------------------------------------------------------------*/
-/* BUTTONS */ 
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.8rem;
-  font-family: var(--titleFont);
-}
 
-#language {
-  background-color: var(--backgroundBox);
-  color: var(--colorFont);
-}
+  /*-----------------------------------Dark/Light Mode & Language section--------------------------------------------------------------*/
+  /* BUTTONS */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-family: var(--titleFont);
+  }
 
-input[type=submit] {
-  background-color: var(--backgroundBox);
-  color: var(--colorFont);
-  border: 1px solid var(--colorFont);
-}
-/*-----------------------------------social media section-------------------------------------------------------------------------*/
-.logoReseaux {
-  display: flex;
-  flex-direction: column;
-  width: 32px;
-}
+  #language {
+    background-color: var(--backgroundBox);
+    color: var(--colorFont);
+  }
 
-.twitter {
-  max-width: initial;
-}
+  input[type=submit] {
+    background-color: var(--backgroundBox);
+    color: var(--colorFont);
+    border: 1px solid var(--colorFont);
+  }
 
-.linkedin {
-  border-radius: initial;
-  max-width: initial;
-}
+  /*-----------------------------------social media section-------------------------------------------------------------------------*/
+  .logoReseaux {
+    display: flex;
+    flex-direction: column;
+    width: 32px;
+  }
+
+  .twitter {
+    max-width: initial;
+  }
+
+  .linkedin {
+    border-radius: initial;
+    max-width: initial;
+  }
 }
