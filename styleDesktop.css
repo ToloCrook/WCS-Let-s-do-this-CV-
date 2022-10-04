@@ -69,8 +69,9 @@
     position: absolute;
     display: flex;
     justify-content: space-around;
+    top: 50%;
     width: 100vw;
-    top: 40vh;
+
   }
 
   .stark {
@@ -90,7 +91,6 @@
 
   .targaryen1 {
     display: none;
-
   }
 
   header #name {
@@ -134,9 +134,9 @@
     height: 65vh;
   }
 
-  input {
-    display: none;
-  }
+.info input {
+  display: none;
+}
 
   /*-----------------------------------experience section-------------------------------------------------------------------------*/
   .collapsible {
