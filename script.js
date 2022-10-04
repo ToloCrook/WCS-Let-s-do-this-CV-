@@ -1,6 +1,4 @@
-
-
-// Dark/Light mode
+/* ------------------------------------------ Dark/Light mode -----------------------------------------*/
 function darkmode() {
     document.getElementById('button-on').style.display = 'none';
     document.getElementById('button-off').style.display = 'block';
@@ -11,29 +9,25 @@ function lightmode() {
     document.getElementById('button-on').style.display = 'block';
 }
 
+let buttons = document.querySelector('.button');
+let body = document.querySelector('body');
+
+body.className = localStorage.getItem('theme');
+
+buttons.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    localStorage.setItem("theme", body.className);
+});
 
 
- let buttons = document.querySelector('.button');
-
- let body = document.querySelector('body');
-
-
-
-// Open/close article
+/*-------------------------------------- Open/close animation mobile ----------------------------------*/
 const block = document.getElementsByClassName('block');
 
 for (i = 0; i < block.length; i++) {
     block[i].addEventListener('click', function () {
         this.classList.toggle('active')
     })
-    
- body.className = localStorage.getItem('theme');
-
- buttons.addEventListener('click', ()=> {
-            body.classList.toggle('light-mode');
-            localStorage.setItem("theme", body.className);
-        });
-
+}
 
 
 /*-------------------------------------Andy--------------------------------------------------------------*/
@@ -44,7 +38,7 @@ function changeZindexExp() {
         document.getElementById('labelSkl').style.zIndex = 2;
         document.getElementById('collapsible_textSkl').style.zIndex = 1;
         document.getElementById('labelCon').style.zIndex = 2;
-        document.getElementById('contactDetails').style.zIndex = 1  ;
+        document.getElementById('contactDetails').style.zIndex = 1;
     } else {
         document.getElementById('labelEdu').style.zIndex = -1;
         document.getElementById('collapsible_textEdu').style.zIndex = -1;
@@ -93,5 +87,4 @@ function changeZindexSkl() {
         document.getElementById('labelCon').style.zIndex = -1;
         document.getElementById('contactDetails').style.zIndex = -1;
     }
-
 }

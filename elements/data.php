@@ -1,11 +1,11 @@
 <?php
 
-$dataFrench = [ 
+$dataFrench = [
     ["Expériences", "Compétences", "Formations"],
     ["Gardien de mur", "Combattant de marcheurs blancs", "Soldat"],
     ["Epéiste", "Dirigeant", "Engagé"],
     ["Héritier", "Maniement des armes", "Politique"],
-    ["Je suis un leader efficace, qui a le pouvoir de motiver des personnes fidèles à atteindre et à dépasser leur potentiel. Je prêche par l'exemple et j'ai un flair naturel pour le leadership avec un palmarès éprouvé de victoires."]
+    ["Je suis un leader efficace, qui a le pouvoir de motiver des personnes fidèles à atteindre et à dépasser leur potentiel. Je prêche par l'exemple et j'ai un flair naturel pour le leadership avec un palmarès éprouvé de victoires."],
     ["jon.snow@knowsnothing.com", "01.05.02.05.02", "Contact me"],
     ["Choisis une langue"],
 ];
@@ -15,7 +15,7 @@ $dataEnglish = [
     ["Wall Guardian", "White Walker Fighter", "Soldier"],
     ["Swordsman", "Leader", "Engaged"],
     ["Heir", "Weapon handling", "Policy"],
-    ["I am an effective leader, that has the power to motivate loyal people to reach and exceed their potential. I lead by example and I have a natural flair for leadership with a proven track record of winning."]
+    ["I am an effective leader, that has the power to motivate loyal people to reach and exceed their potential. I lead by example and I have a natural flair for leadership with a proven track record of winning."],
     ["jon.snow@knowsnothing.com", "01.05.02.05.02", "Contact me"],
     ["Select a language"],
 ];
@@ -31,18 +31,14 @@ $dataValyrian = [
 
 ];
 
-if (isset($_GET['language'])){
-    if (!empty($_GET['language']  == "EN")){
+if (isset($_GET['language'])) {
+    if (!empty($_GET['language']  == "EN")) {
         $data = $dataEnglish;
-
-
-    }elseif (!empty($_GET['language'] == "VAL")){
+    } elseif (!empty($_GET['language'] == "VAL")) {
         $data = $dataValyrian;
-
-    }elseif (!empty($_GET['language']  == "FR")){
+    } elseif (!empty($_GET['language']  == "FR")) {
         $data = $dataFrench;
-}}else{
+    }
+} else {
     $data = $dataFrench;
 };
-
-
