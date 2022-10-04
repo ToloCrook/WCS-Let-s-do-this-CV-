@@ -92,7 +92,7 @@ require_once 'elements/data.php';
                 </div>
 <!---------------------------education section------------------------------------------------------------------->
 <input type="checkbox" id="collapsible_headEdu" />
-                <div class="collapsibleEdu blockEdu">
+                <div class="collapsibleEdu block">
                     <label id="labelExp" class="title-article" for="collapsible_headEdu"><?= $data[0][2] ?></label>
                     <div id="collapsible_textEdu" class="text">
                         <P><?php foreach ($data[3] as $value) {

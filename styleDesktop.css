@@ -64,6 +64,7 @@
 /*-----------------------------------House logos section-------------------------------------------------------------------------*/
   .logoGoT {
     position: absolute;
+    top: 50%;
     display: flex;
     justify-content: space-around;
     width: 100vw;
@@ -323,11 +324,6 @@ z-index: -1;
   font-family: var(--mainFont);
   color: var(--colorFont);
 }
-
-.title-article {
-  display : none;
-  }
-  
 /*-----------------------------------Fname & Lname animation-------------------------------------------------------------------------*/
   @keyframes fadeIn {
     0% {
