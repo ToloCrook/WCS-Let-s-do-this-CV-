@@ -1,6 +1,6 @@
 <?php
 
-$dataFrench = [ 
+$dataFrench = [
     ["Expériences", "Compétences", "Formations"],
     ["Gardien de mur", "Combattant de marcheurs blancs", "Soldat"],
     ["Epéiste", "Dirigeant", "Engagé"],
@@ -31,18 +31,14 @@ $dataValyrian = [
 
 ];
 
-if (isset($_GET['language'])){
-    if (!empty($_GET['language']  == "EN")){
+if (isset($_GET['language'])) {
+    if (!empty($_GET['language']  == "EN")) {
         $data = $dataEnglish;
-
-
-    }elseif (!empty($_GET['language'] == "VAL")){
+    } elseif (!empty($_GET['language'] == "VAL")) {
         $data = $dataValyrian;
-
-    }elseif (!empty($_GET['language']  == "FR")){
+    } elseif (!empty($_GET['language']  == "FR")) {
         $data = $dataFrench;
-}}else{
+    }
+} else {
     $data = $dataFrench;
 };
-
-

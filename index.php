@@ -19,10 +19,10 @@ require_once 'elements/data.php';
 </head>
 
 <body>
-
     <main>
 
-<!---------------------------Light & Dark mode section------------------------------------------------------------------->
+        <!---------------------------Light & Dark mode section------------------------------------------------------------------->
+
         <script src="https://kit.fontawesome.com/67a2af0157.js" crossorigin="anonymous"></script>
 
         <div class="buttons">
@@ -31,7 +31,7 @@ require_once 'elements/data.php';
                 <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()"></i>
             </div>
 
-<!---------------------------language section---------------------------------------------------------------------------->
+            <!---------------------------language section---------------------------------------------------------------------------->
 
             <div id="lang-selection">
                 <form action="index.php" method="get">
@@ -46,29 +46,29 @@ require_once 'elements/data.php';
             </div>
         </div>
 
-<!---------------------------SocialMedia buttons---------------------------------------------------------------------------->
+        <!---------------------------SocialMedia buttons---------------------------------------------------------------------------->
 
         <div class="logoReseaux">
 
             <a href="https://twitter.com/LordSnow" target="_blank"><img src="/img/twitter-icon-25px.png" class="twitter" alt="logo lien twitter"></a>
 
-            <a href="https://uk.linkedin.com/in/jon-snow-3b1245192/fr?trk=people-guest_people_search-card" target="_blank"><img src="/img/linkedin-icon-25px.png" class="linkedin" alt="logo lien linkedin"></a>
+            <a href="https://www.linkedin.com/in/jon-snow-b46979163/fr?trk=people-guest_people_search-card" target="_blank"><img src="/img/linkedin-icon-25px.png" class="linkedin" alt="logo lien linkedin"></a>
         </div>
 
-<!---------------------------header section---------------------------------------------------------------------------->
+        <!---------------------------header section---------------------------------------------------------------------------->
 
         <header>
             <img src="/img/JonSnow.jpg" alt="Profil" srcset="">
             <h1 id="fName">Jon</h1>
             <h1 id="lName">SNOW</h1>
             <h1 id="name">Jon SNOW</h1>
-
         </header>
-<!---------------------------about section------------------------------------------------------------------------------->
+
+        <!---------------------------about section------------------------------------------------------------------------------->
+
         <div id="about">
             <div class="logoGoT">
                 <img src="/img/stark2.png" class="stark" alt="logo stark">
-
                 <img src="/img/targaryen2.png" class="targaryen" alt="logo targaryen">
                 <img src="/img/stark1.png" class="stark1" alt="logo stark">
                 <img src="/img/targaryen1.png" class="targaryen1" alt="logo targaryen">
@@ -123,7 +123,6 @@ require_once 'elements/data.php';
                     </div>
                 </div>
             </section>
-
     </main>
 
     <script src="/script.js"></script>

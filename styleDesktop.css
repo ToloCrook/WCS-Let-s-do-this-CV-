@@ -329,6 +329,11 @@ z-index: -1;
   font-family: var(--mainFont);
   color: var(--colorFont);
 }
+
+.title-article {
+  display : none;
+  }
+  
 /*-----------------------------------Fname & Lname animation-------------------------------------------------------------------------*/
   @keyframes fadeIn {
     0% {
