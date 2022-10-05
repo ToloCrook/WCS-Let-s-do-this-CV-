@@ -10,8 +10,7 @@ require_once 'elements/data.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cv Jon Snow</title>
-
-
+    <link rel="shortcut icon" href="/img/sword.png" type="image/x-icon">
     <link rel="stylesheet" media='screen and (max-width: 930px)' href="styleMobile.css" />
     <link rel="stylesheet" media='screen and (min-width: 931px)' href="styleDesktop.css" />
     <link rel="stylesheet" href="style.css" />
@@ -50,9 +49,9 @@ require_once 'elements/data.php';
 
         <div class="logoReseaux">
 
-            <a href="https://twitter.com/LordSnow" target="_blank"><img src="/img/twitter-icon-25px.png" class="twitter" alt="logo lien twitter"></a>
+            <a href="https://twitter.com/LordSnow" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/jon-snow-b46979163/fr?trk=people-guest_people_search-card" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
 
-            <a href="https://www.linkedin.com/in/jon-snow-b46979163/fr?trk=people-guest_people_search-card" target="_blank"><img src="/img/linkedin-icon-25px.png" class="linkedin" alt="logo lien linkedin"></a>
         </div>
 
         <!---------------------------header section---------------------------------------------------------------------------->
@@ -73,7 +72,7 @@ require_once 'elements/data.php';
                 <img src="/img/stark1.png" class="stark1" alt="logo stark">
                 <img src="/img/targaryen1.png" class="targaryen1" alt="logo targaryen">
             </div>
-            <h2>King of the North</h2>
+            <h2><?= $data[7][0] ?></h2>
             <p><?= $data[4][0] ?></p>
         </div>
         <!---------------------------Info section--------------------------------------------------------------------------->
@@ -96,7 +95,7 @@ require_once 'elements/data.php';
             <!---------------------------education section------------------------------------------------------------------->
             <input type="checkbox" id="collapsible_headEdu" />
             <div class="collapsibleEdu block">
-                <label id="labelExp" class="title-article" for="collapsible_headEdu"><?= $data[0][2] ?></label>
+                <label id="labelEdu" class="title-article" for="collapsible_headEdu"><?= $data[0][2] ?></label>
                 <div class="title-article">
                     <h2><?= $data[0][2] ?></h2>
                 </div>
@@ -125,7 +124,7 @@ require_once 'elements/data.php';
             </div>
             <!---------------------------contact section------------------------------------------------------------------------>
             <div class="contact block">
-                <label id="labelCon" class="title-article">CONTACT</label>
+                <label id="labelCon" class="title-article"><?= $data[0][3] ?></label>
                 <div class="title-article">
                     <h2><?= $data[0][3] ?></h2>
                 </div>

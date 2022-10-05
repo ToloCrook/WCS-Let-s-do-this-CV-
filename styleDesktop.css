@@ -1,21 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;500&family=Patua+One&display=swap");
-/*Game of thrones font*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Patua+One&display=swap");
-/*Monserrat font*/
-
-:root {
-  --backgroundBody: #e5fdff;
-  --backgroundBox: #3088AE;
-  --shadow: #002C3A;
-  --border: #002C3A;
-  --colorFont: #002C3A;
-  --titleFont: Cinzel, serif;
-  --mainFont: Montserrat, serif;
-}
 
 @media screen {
   body {
-    line-height: 1.5em;
+    line-height: 2em;
     background-color: var(--backgroundBody);
     color: var(--colorFont);
   }
@@ -31,7 +17,7 @@
   header {
     margin: 0;
     margin-top: 0%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -49,9 +35,10 @@
     position: absolute;
     top: 40%;
     left: 10%;
+    align-items: center;
     font-size: 7vw;
     font-family: var(--titleFont);
-    animation: fadeIn 5s;
+    animation: fName 5s;
   }
 
   header #lName {
@@ -61,15 +48,62 @@
     right: 5%;
     font-size: 7vw;
     font-family: var(--titleFont);
-    animation: fadeIn 5s;
+    animation: lName 5s;
   }
+
+  @keyframes fName {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+  }
+
+  0% {
+    left: 50%;
+  }
+
+  100% {
+    left: 10%;
+}
+  }
+
+@keyframes lName {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+}
+
+0% {
+  right: 50%;
+}
+
+100% {
+  right: 5%;
+}
+
+}  
+
+  /* @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+  }
+} */
 
   /*-----------------------------------House logos section-------------------------------------------------------------------------*/
   .logoGoT {
     position: absolute;
     display: flex;
     justify-content: space-around;
-    top: 50%;
+    top: 53%;
     width: 100vw;
 
   }
@@ -105,7 +139,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
   }
 
   #about h2 {
@@ -126,7 +160,9 @@
 
   /*-----------------------------------info section-------------------------------------------------------------------------------*/
   .info {
-    margin: 4.5vw;
+    margin-top: 5vh;
+    margin-left: 4.5vw;
+    margin-bottom: 3vh;
     left: 0%;
     position: relative;
     overflow: hidden;
@@ -138,6 +174,10 @@
   display: none;
 }
 
+.info .title-article h2{
+  display: none;
+  }
+
   /*-----------------------------------experience section-------------------------------------------------------------------------*/
   .collapsible {
     position: absolute;
@@ -145,11 +185,13 @@
     height: 26vh;
     padding-top: 2%;
     padding-left: 2%;
-    border-radius: 10px;
+    border: 100px;
+    border-radius: 25px;
     background: var(--backgroundBox);
     color: var(--colorFont);
     transition: 0.5s ease-out;
     z-index: 1;
+    overflow: hidden;
   }
 
   .info #collapsible_head:checked~.collapsible {
@@ -157,6 +199,20 @@
     width: 85.3vw;
     overflow: auto;
   }
+
+  .info #collapsible_head:checked~.collapsible #labelExp{
+      padding-left: 33%;
+      font-size: 4vw;
+  }
+
+  .info #collapsible_head:checked ~ .collapsible #collapsible_text p{
+    line-height: 1.7em;
+    width: 80vw;
+    padding-top: 1%;
+    padding-left: 15%;
+    font-size: 4vh;
+    overflow: auto;
+}
 
   .info #collapsible_head:checked~.collapsibleEdu {
     z-index: -1;
@@ -167,8 +223,9 @@
   }
 
 
-  .collapsible label {
-    font-size: 2vw;
+  .collapsible #labelExp {
+    font-weight: 800;
+    font-size: 2.5vw;
     font-family: var(--titleFont);
     cursor: pointer;
     transition: 0.5s ease-out;
@@ -176,17 +233,19 @@
 
   #collapsible_text {
     position: absolute;
-    margin: 0;
     align-items: left;
+    padding-top: 2%;
+    padding-left: 4%;
     overflow: hidden;
   }
 
   #collapsible_text p {
     margin: 0;
-    font-size: 1vw;
+    font-size: 3vh;
+    font-weight: 300;
     font-family: var(--mainFont);
     color: var(--colorFont);
-    overflow: auto;
+    transition: 0.5s ease-out;
   }
 
   /*-----------------------------------education section-------------------------------------------------------------------------*/
@@ -198,11 +257,12 @@
     height: 26vh;
     padding-top: 2%;
     padding-left: 2%;
-    border-radius: 10px;
+    border-radius: 25px;
     background: var(--backgroundBox);
     color: var(--colorFont);
     transition: 0.5s ease-out;
     z-index: 1;
+    overflow: hidden;
   }
 
   .info #collapsible_headEdu:checked~.collapsibleEdu {
@@ -210,6 +270,20 @@
     width: 85.3vw;
     overflow: auto;
   }
+
+  .info #collapsible_headEdu:checked~.collapsibleEdu #labelEdu{
+    padding-left: 33%;
+    font-size: 4vw;
+}
+
+  .info #collapsible_headEdu:checked ~ .collapsibleEdu #collapsible_textEdu p{
+    line-height: 1.7em;
+    width: 60vw;
+    padding-top: 1%;
+    padding-left: 15%;
+    font-size: 4vh;
+    overflow: auto;
+}
 
   .info #collapsible_headEdu:checked~.collapsible {
     z-index: -1;
@@ -219,8 +293,9 @@
     z-index: -1;
   }
 
-  .collapsibleEdu label {
-    font-size: 2vw;
+  .collapsibleEdu #labelEdu {
+    font-weight: 800;
+    font-size: 2.5vw;
     font-family: var(--titleFont);
     cursor: pointer;
     transition: 0.5s ease-out;
@@ -230,15 +305,17 @@
     position: absolute;
     margin: 0;
     align-items: left;
-    overflow: hidden;
+    padding-top: 2%;
+    padding-left: 4%;
   }
 
   #collapsible_textEdu p {
     margin: 0;
-    font-size: 1vw;
+    font-size: 3vh;
+    font-weight: 300;
     font-family: var(--mainFont);
     color: var(--colorFont);
-    overflow: auto;
+    transition: 0.5s ease-out;
   }
 
   /*-----------------------------------Skills section-------------------------------------------------------------------------*/
@@ -250,11 +327,12 @@
     left: 0%;
     padding-top: 2%;
     padding-left: 2%;
-    border-radius: 10px;
+    border-radius: 25px;
     background: var(--backgroundBox);
     color: var(--colorFont);
     transition: 0.5s ease-out;
     z-index: 1;
+    overflow: hidden;
   }
 
   .info #collapsible_headSkl:checked~.collapsibleSkl {
@@ -262,6 +340,20 @@
     width: 85.3vw;
     overflow: auto;
   }
+
+  .info #collapsible_headSkl:checked~.collapsibleSkl #labelSkl{
+    padding-left: 40%;
+    font-size: 4vw;
+}
+
+  .info #collapsible_headSkl:checked ~ .collapsibleSkl #collapsible_textSkl p{
+    line-height: 1.7em;
+    width: 60vw;
+    padding-top: 1%;
+    padding-left: 15%;
+    font-size: 4vh;
+    overflow: auto;
+}
 
   .info #collapsible_headSkl:checked~.collapsible {
     z-index: -1;
@@ -272,7 +364,8 @@
   }
 
   .collapsibleSkl #labelSkl {
-    font-size: 2vw;
+    font-weight: 800;
+    font-size: 2.5vw;
     font-family: var(--titleFont);
     cursor: pointer;
     transition: 0.5s ease-out;
@@ -282,15 +375,17 @@
     position: absolute;
     margin: 0;
     align-items: left;
-    overflow: hidden;
+    padding-top: 2%;
+    padding-left: 4%;
   }
 
   #collapsible_textSkl p {
     margin: 0;
-    font-size: 1vw;
+    font-size: 3vh;
+    font-weight: 300;
     font-family: var(--mainFont);
     color: var(--colorFont);
-    overflow: auto;
+    transition: 0.5s ease-out;
   }
 
   /*-----------------------------------Contact section-------------------------------------------------------------------------*/
@@ -306,54 +401,29 @@
     width: 42vw;
     height: 29.5vh;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 25px;
     background: var(--backgroundBox);
-    transition: 0.3s ease-out;
     z-index: 0;
   }
 
   .contact #labelCon {
-    font-size: 2vw;
+    font-weight: 800;
+    font-size: 2.5vw;
     font-family: var(--titleFont);
-    color: var(--colorFont);
     padding-left: 2vw;
     padding-top: 3vh;
   }
 
-  .contact .contactDetails {
+.contact p {
     margin: 0;
     padding-top: 0%;
     padding-left: 5%;
-    font-size: 1vw;
+    font-size: 1.5vw;
     align-items: left;
     font-family: var(--mainFont);
     color: var(--colorFont);
   }
-
-  .contactDetails a {
-    margin: 0;
-    padding-top: 0%;
-    padding-left: 5%;
-    font-size: 2vw;
-    align-items: left;
-    font-family: var(--mainFont);
-    color: var(--colorFont);
-  }
-
-  .info .title-article h2{
-  display: none;
-  }
-
   /*-----------------------------------Fname & Lname animation-------------------------------------------------------------------------*/
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
 
   /*-----------------------------------Dark/Light Mode & Language section--------------------------------------------------------------*/
   /* BUTTONS */
@@ -365,14 +435,18 @@
   }
 
   #language {
-    background-color: var(--backgroundBox);
+    background-color: var(--backgroundBody);
     color: var(--colorFont);
   }
 
   input[type=submit] {
-    background-color: var(--backgroundBox);
+    background-color: var(--backgroundBody);
     color: var(--colorFont);
-    border: 1px solid var(--colorFont);
+    border: 2px solid var(--backgroundBox);
+  }
+
+  select {
+    border: 2px solid var(--backgroundBox);
   }
 
   /*-----------------------------------social media section-------------------------------------------------------------------------*/
@@ -382,12 +456,7 @@
     width: 32px;
   }
 
-  .twitter {
-    max-width: initial;
-  }
-
-  .linkedin {
-    border-radius: initial;
-    max-width: initial;
+  body.light-mode a i {
+    color: #3088AE;
   }
 }

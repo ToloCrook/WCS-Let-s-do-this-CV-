@@ -78,6 +78,7 @@
     margin-top: 5%;
     display: flex;
     justify-content: center;
+    text-align: center;
   }
 
   #about p {
@@ -105,15 +106,10 @@
     width: 25px;
   }
 
-  .twitter {
-    width: 25px;
-    height: auto;
+  body.light-mode a i {
+    color: #3088AE;
   }
 
-  .linkedin {
-    width: 25px;
-    height: auto;
-  }
 
   /* ------------------------------------------- Animation article -------------------------------------------*/
   .info {
@@ -150,11 +146,6 @@
     transform: translateY(-50%);
   }
 
-  .info .block:hover {
-    transform: scale(1.05);
-  }
-
-
   .info .text {
     height: 0px;
     overflow: hidden;
@@ -165,7 +156,7 @@
 
   /* Modifier height en fonction de la taille du contenu ! */
   .info .block.active .text {
-    height: 150px;
+    height: 180px;
   }
 
   .info .block.active .title-article::before {
