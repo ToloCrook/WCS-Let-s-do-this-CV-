@@ -36,8 +36,8 @@ require_once 'elements/data.php';
                 <form action="index.php" method="get">
                     <label for="language" class="font-language"><?= $data[6][0] ?></label>
                     <select name="language" id="language">
-                        <option class="lang" value="FR">FR</option>
                         <option class="lang" value="EN">EN</option>
+                        <option class="lang" value="FR">FR</option>
                         <option class="lang" value="VAL">VAL</option>
                         <input type="submit" id="submit-button" value="Change">
                     </select>

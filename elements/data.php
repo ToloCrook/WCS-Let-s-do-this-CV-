@@ -43,5 +43,5 @@ if (isset($_GET['language'])) {
         $data = $dataFrench;
     }
 } else {
-    $data = $dataFrench;
+    $data = $dataEnglish;
 };

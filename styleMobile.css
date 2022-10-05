@@ -221,3 +221,8 @@
 select {
   border: 1px solid var(--backgroundBox);
 }
+
+a {
+  text-decoration: none;
+  color: var(--mainFont);
+}
