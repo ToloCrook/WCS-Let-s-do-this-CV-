@@ -50,9 +50,9 @@ require_once 'elements/data.php';
 
         <div class="logoReseaux">
 
-            <a href="https://twitter.com/LordSnow" target="_blank"><img src="/img/twitter-icon-25px.png" class="twitter" alt="logo lien twitter"></a>
+            <a href="https://twitter.com/LordSnow" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/jon-snow-b46979163/fr?trk=people-guest_people_search-card" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
 
-            <a href="https://www.linkedin.com/in/jon-snow-b46979163/fr?trk=people-guest_people_search-card" target="_blank"><img src="/img/linkedin-icon-25px.png" class="linkedin" alt="logo lien linkedin"></a>
         </div>
 
         <!---------------------------header section---------------------------------------------------------------------------->
