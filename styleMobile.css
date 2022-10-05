@@ -78,6 +78,7 @@
     margin-top: 5%;
     display: flex;
     justify-content: center;
+    text-align: center;
   }
 
   #about p {
@@ -155,7 +156,7 @@
 
   /* Modifier height en fonction de la taille du contenu ! */
   .info .block.active .text {
-    height: 150px;
+    height: 180px;
   }
 
   .info .block.active .title-article::before {

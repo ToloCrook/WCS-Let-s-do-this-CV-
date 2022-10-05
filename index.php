@@ -72,7 +72,7 @@ require_once 'elements/data.php';
                 <img src="/img/stark1.png" class="stark1" alt="logo stark">
                 <img src="/img/targaryen1.png" class="targaryen1" alt="logo targaryen">
             </div>
-            <h2>King of the North</h2>
+            <h2><?= $data[7][0] ?></h2>
             <p><?= $data[4][0] ?></p>
         </div>
         <!---------------------------Info section--------------------------------------------------------------------------->
