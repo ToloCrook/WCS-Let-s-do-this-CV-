@@ -73,7 +73,7 @@ require_once 'elements/data.php';
                 <img src="/img/stark1.png" class="stark1" alt="logo stark">
                 <img src="/img/targaryen1.png" class="targaryen1" alt="logo targaryen">
             </div>
-            <h2>King of the North</h2>
+            <h2><?= $data[7][0] ?></h2>
             <p><?= $data[4][0] ?></p>
         </div>
         <!---------------------------Info section--------------------------------------------------------------------------->
@@ -96,7 +96,7 @@ require_once 'elements/data.php';
             <!---------------------------education section------------------------------------------------------------------->
             <input type="checkbox" id="collapsible_headEdu" />
             <div class="collapsibleEdu block">
-                <label id="labelExp" class="title-article" for="collapsible_headEdu"><?= $data[0][2] ?></label>
+                <label id="labelEdu" class="title-article" for="collapsible_headEdu"><?= $data[0][2] ?></label>
                 <div class="title-article">
                     <h2><?= $data[0][2] ?></h2>
                 </div>
@@ -125,7 +125,7 @@ require_once 'elements/data.php';
             </div>
             <!---------------------------contact section------------------------------------------------------------------------>
             <div class="contact block">
-                <label id="labelCon" class="title-article">CONTACT</label>
+                <label id="labelCon" class="title-article"><?= $data[0][3] ?></label>
                 <div class="title-article">
                     <h2><?= $data[0][3] ?></h2>
                 </div>
