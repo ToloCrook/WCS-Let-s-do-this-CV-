@@ -105,15 +105,10 @@
     width: 25px;
   }
 
-  .twitter {
-    width: 25px;
-    height: auto;
+  body.light-mode a i {
+    color: #3088AE;
   }
 
-  .linkedin {
-    width: 25px;
-    height: auto;
-  }
 
   /* ------------------------------------------- Animation article -------------------------------------------*/
   .info {
@@ -149,11 +144,6 @@
     font-size: 30px;
     transform: translateY(-50%);
   }
-
-  .info .block:hover {
-    transform: scale(1.05);
-  }
-
 
   .info .text {
     height: 0px;
