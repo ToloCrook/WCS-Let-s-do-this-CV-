@@ -72,6 +72,7 @@
   }
 
   #about h2 {
+    line-height: 1.1em;
     margin-bottom: 2vw;
     font-size: 5.5vw;
     font-family: var(--titleFont);
@@ -171,6 +172,11 @@
     display: none;
   }
 
+  a {
+    text-decoration: none;
+    color: var(--mainFont);
+  }
+
   /* BUTTONS */
 
   .buttons {
@@ -186,7 +192,7 @@
 
   #language {
     width: 100%;
-    height: 15px;
+    height: 3vw;
     font-size: 2vw;
     background-color: var(--backgroundBox);
     color: var(--colorFont);
@@ -203,7 +209,7 @@
 
   input[type=submit] {
     width: 100%;
-    height: 15px;
+    height: 3vw;
     font-size: 2vw;
     text-align: center;
     background-color: var(--backgroundBox);
