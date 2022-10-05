@@ -1,0 +1,467 @@
+
+@media screen {
+  body {
+    line-height: 2em;
+    background-color: var(--backgroundBody);
+    color: var(--colorFont);
+  }
+
+  main {
+    margin: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*-----------------------------------header section-------------------------------------------------------------------------*/
+  header {
+    margin: 0;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+
+  header img {
+    max-width: 25%;
+    border-radius: 50%;
+  }
+
+  header #fName {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    align-items: center;
+    font-size: 7vw;
+    font-family: var(--titleFont);
+    animation: fName 5s;
+  }
+
+  header #lName {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    font-size: 7vw;
+    font-family: var(--titleFont);
+    animation: lName 5s;
+  }
+
+  @keyframes fName {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+  }
+
+  0% {
+    left: 50%;
+  }
+
+  100% {
+    left: 10%;
+}
+  }
+
+@keyframes lName {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+}
+
+0% {
+  right: 50%;
+}
+
+100% {
+  right: 5%;
+}
+
+}  
+
+  /* @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+  }
+} */
+
+  /*-----------------------------------House logos section-------------------------------------------------------------------------*/
+  .logoGoT {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 53%;
+    width: 100vw;
+
+  }
+
+  .stark {
+    max-width: initial;
+  }
+
+  .targaryen {
+
+    border-radius: initial;
+    max-width: initial;
+  }
+
+  .stark1 {
+    display: none;
+  }
+
+
+  .targaryen1 {
+    display: none;
+  }
+
+  header #name {
+    display: none;
+  }
+
+  /*-----------------------------------about section-------------------------------------------------------------------------*/
+
+  #about {
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0%;
+  }
+
+  #about h2 {
+    align-items: center;
+    margin: 0;
+    margin-bottom: 4vh;
+    font-size: 3vw;
+    font-family: var(--titleFont);
+  }
+
+  #about p {
+    margin: 0;
+    font-size: 1.5vw;
+    font-family: var(--mainFont);
+    text-align: center;
+  }
+
+
+  /*-----------------------------------info section-------------------------------------------------------------------------------*/
+  .info {
+    margin-top: 5vh;
+    margin-left: 4.5vw;
+    margin-bottom: 3vh;
+    left: 0%;
+    position: relative;
+    overflow: hidden;
+    width: 87vw;
+    height: 65vh;
+  }
+
+.info input {
+  display: none;
+}
+
+.info .title-article h2{
+  display: none;
+  }
+
+  /*-----------------------------------experience section-------------------------------------------------------------------------*/
+  .collapsible {
+    position: absolute;
+    width: 40vw;
+    height: 26vh;
+    padding-top: 2%;
+    padding-left: 2%;
+    border: 100px;
+    border-radius: 25px;
+    background: var(--backgroundBox);
+    color: var(--colorFont);
+    transition: 0.5s ease-out;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .info #collapsible_head:checked~.collapsible {
+    height: 61.3vh;
+    width: 85.3vw;
+    overflow: auto;
+  }
+
+  .info #collapsible_head:checked~.collapsible #labelExp{
+      padding-left: 33%;
+      font-size: 4vw;
+  }
+
+  .info #collapsible_head:checked ~ .collapsible #collapsible_text p{
+    line-height: 1.7em;
+    width: 80vw;
+    padding-top: 1%;
+    padding-left: 15%;
+    font-size: 4vh;
+    overflow: auto;
+}
+
+  .info #collapsible_head:checked~.collapsibleEdu {
+    z-index: -1;
+  }
+
+  .info #collapsible_head:checked~.collapsibleSkl {
+    z-index: -1;
+  }
+
+
+  .collapsible #labelExp {
+    font-weight: 800;
+    font-size: 2.5vw;
+    font-family: var(--titleFont);
+    cursor: pointer;
+    transition: 0.5s ease-out;
+  }
+
+  #collapsible_text {
+    position: absolute;
+    align-items: left;
+    padding-top: 2%;
+    padding-left: 4%;
+    overflow: hidden;
+  }
+
+  #collapsible_text p {
+    margin: 0;
+    font-size: 3vh;
+    font-weight: 300;
+    font-family: var(--mainFont);
+    color: var(--colorFont);
+    transition: 0.5s ease-out;
+  }
+
+  /*-----------------------------------education section-------------------------------------------------------------------------*/
+  .collapsibleEdu {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 40vw;
+    height: 26vh;
+    padding-top: 2%;
+    padding-left: 2%;
+    border-radius: 25px;
+    background: var(--backgroundBox);
+    color: var(--colorFont);
+    transition: 0.5s ease-out;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .info #collapsible_headEdu:checked~.collapsibleEdu {
+    height: 61.3vh;
+    width: 85.3vw;
+    overflow: auto;
+  }
+
+  .info #collapsible_headEdu:checked~.collapsibleEdu #labelEdu{
+    padding-left: 33%;
+    font-size: 4vw;
+}
+
+  .info #collapsible_headEdu:checked ~ .collapsibleEdu #collapsible_textEdu p{
+    line-height: 1.7em;
+    width: 60vw;
+    padding-top: 1%;
+    padding-left: 15%;
+    font-size: 4vh;
+    overflow: auto;
+}
+
+  .info #collapsible_headEdu:checked~.collapsible {
+    z-index: -1;
+  }
+
+  .info #collapsible_headEdu:checked~.collapsibleSkl {
+    z-index: -1;
+  }
+
+  .collapsibleEdu #labelEdu {
+    font-weight: 800;
+    font-size: 2.5vw;
+    font-family: var(--titleFont);
+    cursor: pointer;
+    transition: 0.5s ease-out;
+  }
+
+  #collapsible_textEdu {
+    position: absolute;
+    margin: 0;
+    align-items: left;
+    padding-top: 2%;
+    padding-left: 4%;
+  }
+
+  #collapsible_textEdu p {
+    margin: 0;
+    font-size: 3vh;
+    font-weight: 300;
+    font-family: var(--mainFont);
+    color: var(--colorFont);
+    transition: 0.5s ease-out;
+  }
+
+  /*-----------------------------------Skills section-------------------------------------------------------------------------*/
+  .collapsibleSkl {
+    position: absolute;
+    width: 40vw;
+    height: 26vh;
+    bottom: 0%;
+    left: 0%;
+    padding-top: 2%;
+    padding-left: 2%;
+    border-radius: 25px;
+    background: var(--backgroundBox);
+    color: var(--colorFont);
+    transition: 0.5s ease-out;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .info #collapsible_headSkl:checked~.collapsibleSkl {
+    height: 61.3vh;
+    width: 85.3vw;
+    overflow: auto;
+  }
+
+  .info #collapsible_headSkl:checked~.collapsibleSkl #labelSkl{
+    padding-left: 40%;
+    font-size: 4vw;
+}
+
+  .info #collapsible_headSkl:checked ~ .collapsibleSkl #collapsible_textSkl p{
+    line-height: 1.7em;
+    width: 60vw;
+    padding-top: 1%;
+    padding-left: 15%;
+    font-size: 4vh;
+    overflow: auto;
+}
+
+  .info #collapsible_headSkl:checked~.collapsible {
+    z-index: -1;
+  }
+
+  .info #collapsible_headSkl:checked~.collapsibleEdu {
+    z-index: -1;
+  }
+
+  .collapsibleSkl #labelSkl {
+    font-weight: 800;
+    font-size: 2.5vw;
+    font-family: var(--titleFont);
+    cursor: pointer;
+    transition: 0.5s ease-out;
+  }
+
+  #collapsible_textSkl {
+    position: absolute;
+    margin: 0;
+    align-items: left;
+    padding-top: 2%;
+    padding-left: 4%;
+  }
+
+  #collapsible_textSkl p {
+    margin: 0;
+    font-size: 3vh;
+    font-weight: 300;
+    font-family: var(--mainFont);
+    color: var(--colorFont);
+    transition: 0.5s ease-out;
+  }
+
+  /*-----------------------------------Contact section-------------------------------------------------------------------------*/
+
+  .contact {
+    position: absolute;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    bottom: 0%;
+    right: 0%;
+    width: 42vw;
+    height: 29.5vh;
+    overflow: hidden;
+    border-radius: 25px;
+    background: var(--backgroundBox);
+    z-index: 0;
+  }
+
+  .contact #labelCon {
+    font-weight: 800;
+    font-size: 2.5vw;
+    font-family: var(--titleFont);
+    padding-left: 2vw;
+    padding-top: 3vh;
+  }
+
+.contact p {
+    margin: 0;
+    padding-top: 0%;
+    padding-left: 5%;
+    font-size: 1.5vw;
+    align-items: left;
+    font-family: var(--mainFont);
+    color: var(--colorFont);
+  }
+  /*-----------------------------------Fname & Lname animation-------------------------------------------------------------------------*/
+
+  /*-----------------------------------Dark/Light Mode & Language section--------------------------------------------------------------*/
+  /* BUTTONS */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-family: var(--titleFont);
+  }
+
+  #language {
+    background-color: var(--backgroundBody);
+    color: var(--colorFont);
+  }
+
+  input[type=submit] {
+    background-color: var(--backgroundBody);
+    color: var(--colorFont);
+    border: 2px solid var(--backgroundBox);
+  }
+
+  select {
+    border: 2px solid var(--backgroundBox);
+  }
+
+  /*-----------------------------------social media section-------------------------------------------------------------------------*/
+  .logoReseaux {
+    display: flex;
+    flex-direction: column;
+    width: 32px;
+  }
+
+  body.light-mode a i {
+    color: #3088AE;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainFont);
+}

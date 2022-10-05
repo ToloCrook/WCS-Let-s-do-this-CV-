@@ -1,0 +1,74 @@
+/*Game of thrones font*/
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;500&family=Patua+One&display=swap");
+/*Monserrat font*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Patua+One&display=swap");
+
+
+:root {
+    --backgroundBody: #020B10;
+    --backgroundBox: #182631;
+    --shadow: #E6E0E6;
+    --border: #E6E0E6;
+    --colorFont: #E6E0E6;
+    --titleFont: Cinzel, serif;
+    --mainFont: Montserrat, serif;
+}
+
+.light-mode {
+
+    --backgroundBody: #BFF7FF;
+    --backgroundBox: #3088AE;
+    --shadow: #002C3A;
+    --border: #002C3A;
+    --colorFont: #002C3A;
+}
+
+/* BUTTONS */
+
+#button-off {
+    display: none;
+}
+
+
+
+.drop-down-menu {
+    border: 1px solid #E6E0E6;
+    padding: 3px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.drop-down-menu:hover {
+    background-color: grey;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.lang {
+    font-size: 0.7rem;
+    text-decoration: none;
+
+}
+
+
+a:visited {
+    color: #E6E0E6;
+}
+
+#lang-selection {
+    align-self: end;
+    font-size: 0.7rem;
+
+}
+
+
+
+
+.button {
+    cursor: pointer;
+}
+
+input[type=submit] {
+    border-radius: 50px;
+}
